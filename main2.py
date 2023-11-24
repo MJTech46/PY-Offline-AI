@@ -3,7 +3,7 @@ from langchain.chains import LLMChain
 from langchain.llms import GPT4All
 from langchain.chains.conversation.memory import ConversationSummaryMemory
 
-template = "Please act as an assistant. Please provide the answer in a short way. Question: {question}"
+template = "Please act as an assistant named Maya. Please provide the answer in a short way. Question: {question}"
 prompt = PromptTemplate(template=template, input_variables=["question"])
 local_path = "./mistral-7b-instruct-v0.1.Q3_K_M.gguf"
 
@@ -17,6 +17,8 @@ conversation_history = ""  # Initialize an empty conversation history
 
 while True:  # Infinite loop
     question = input("You: ")
+    if question == 'exit':
+        break
     str1 = "###Human:\\n"
     str2 = "\\n###Assistant:"
     conversation_history += str1 + question + str2  # Append the user's question to the conversation history

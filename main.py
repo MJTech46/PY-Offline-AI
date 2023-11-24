@@ -4,7 +4,7 @@ from langchain.llms import GPT4All
 
 ##Template##
 #template = "Please act as a geographer. Please provide the answer in a short way. Question: {question}" #orginal
-template = "Please act as an assistant. Please provide the answer in a short way. Question: {question}" #(recommended)
+template = "Please act as an assistant named Maya. Please provide the answer in a short way. Question: {question}" #(recommended)
 #template = "Please act as an assistant. Please provide the answer in a detailed way. Question: {question}" #(not recommended)
 
 prompt = PromptTemplate(template=template, input_variables=["question"])
