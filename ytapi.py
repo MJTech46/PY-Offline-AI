@@ -5,7 +5,7 @@ url = "https://ytstream-download-youtube-videos.p.rapidapi.com/dl"
 querystring = {"id":"UxxajLWwzqY"}
 
 headers = {
-	"X-RapidAPI-Key": "035f085157msh229319bf92d56f3p122af5jsn241c25adf036",
+	"X-RapidAPI-Key": "-",
 	"X-RapidAPI-Host": "ytstream-download-youtube-videos.p.rapidapi.com"
 }
 
